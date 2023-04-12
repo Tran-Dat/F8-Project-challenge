@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-cl: #152427;
+    --font-two: "Public Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ====================================== common ====================================== */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    width: 173px;
+    height: 57px;
+    background: #143c3c;
+    border: 1.5px solid #143c3c;
+    border-radius: 40px;
+}
+
+/* ====================================== Header ====================================== */
+.header {
+    margin: 28px 130px 42px;
+}
+
+.header .row {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header .row::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1140px;
+    height: 1px;
+    bottom: -13px;
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dddcdc 51.09%,
+        rgba(213, 213, 213, 0) 99.68%
+    );
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar__link {
+    padding: 0 19px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+
+.navbar__item--active {
+    position: relative;
+    color: #152427;
+}
+
+.navbar__item--active::after {
+    position: absolute;
+    left: 5px;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #143c3c;
+}
+
+.navbar__link:hover {
+    color: #152427;
+}
+
+.header-action__signup {
+    display: inline-block;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #ffffff;
+    margin-left: 41px;
+    cursor: pointer;
+}

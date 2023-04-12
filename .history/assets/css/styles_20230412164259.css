@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-cl: #152427;
+    --font-two: "Public Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ====================================== common ====================================== */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    width: 173px;
+    height: 57px;
+    background: #143c3c;
+    border: 1.5px solid #143c3c;
+    border-radius: 40px;
+}
+
+/* ====================================== Header ====================================== */
+.header {
+    margin: 28px 130px 42px;
+}
+
+.header .row {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar__link {
+    padding: 0 19px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #152427;
+}
+
+.header-action__signup {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #ffffff;
+    margin-left: 41px;
+}
